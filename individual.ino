@@ -29,6 +29,7 @@ void setup() {
   Serial.begin(9600);
   pinMode(irPin, INPUT);
   pinMode(irPin2, INPUT);
+}
 
 void process() {
   //process of two IR sensor for count and discount
@@ -47,7 +48,6 @@ void process() {
      count++;
      Serial.println("Student inside the room \n");
      Serial.println(count);
-     thingSpeakWrite(count);
      
      state2 = false;
   }
